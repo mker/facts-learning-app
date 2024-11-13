@@ -9,6 +9,11 @@ body {
   background-color: #292524;
   color: #fafaf9;
   padding: 48px 64px;
+
+  /* 1000px media */
+  @media (max-width: 62.5rem) {
+    padding: 32px 48px;
+  }
 }
 
 .container {
@@ -22,22 +27,22 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
 
-.fact-form {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-  background-color: #44403c;
-  margin-bottom: 40px;
-  padding: 16px 32px;
-  border-radius: 16px;
+  /* 800px media */
+  @media (max-width: 50rem) {
+    gap: 12px;
+  }
 }
 
 .main {
   display: grid;
   grid-template-columns: 250px 1fr;
   gap: 48px;
+
+  /* 900px media */
+  @media (max-width: 56.25rem) {
+    grid-template-columns: 1fr;
+  }
 }
 
 /* ELEMENTS */
@@ -54,11 +59,21 @@ body {
 }
 
 h1 {
-  font-size: 42px;
+  font-size: calc(42rem / 16);
   text-transform: uppercase;
   font-family: "Coiny", sans-serif;
   line-height: 1;
   margin-top: 6px;
+
+  /* 800px */
+  @media (max-width: 50rem) {
+    font-size: calc(32rem / 16);
+  }
+
+  /* 700px */
+  @media (max-width: 43.75rem) {
+    font-size: calc(28rem / 16);
+  }
 }
 
 .category {
@@ -76,6 +91,13 @@ h1 {
   padding: 16px 24px;
   border-radius: 16px;
   letter-spacing: -1px;
+
+  /* 1200px */
+  @media (max-width: 75rem) {
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 12px;
+  }
 }
 
 .tag {
@@ -148,8 +170,14 @@ ul {
 }
 
 .btn-large {
-  font-size: 20px;
+  font-size: calc(20rem / 16);
   padding: 20px 32px 17px;
+
+  /* 800px */
+  @media (max-width: 50rem) {
+    font-size: calc(16rem / 16);
+    padding: 16px 26px 13px;
+  }
 }
 
 .btn-all-categories {
@@ -162,6 +190,23 @@ ul {
   background-image: none;
 }
 
+/* FORM */
+.fact-form {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background-color: #44403c;
+  margin-bottom: 40px;
+  padding: 16px 32px;
+  border-radius: 16px;
+
+  /* 1000px */
+  @media (max-width: 62.5rem) {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+
 .fact-form input,
 .fact-form select {
   width: 220px;
@@ -172,6 +217,11 @@ ul {
   font-size: 18px;
   color: inherit;
   font-family: inherit;
+
+  /* 1000px */
+  @media (max-width: 62.5rem) {
+    width: auto;
+  }
 }
 
 .fact-form input::placeholder {

@@ -68,6 +68,7 @@ body {
 section {
   overflow-y: scroll;
   padding-bottom: 40px;
+  scrollbar-color: #44403c #78716c;
 }
 
 /* ELEMENTS */

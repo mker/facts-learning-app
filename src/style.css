@@ -9,7 +9,6 @@ body {
   background-color: #292524;
   color: #fafaf9;
   padding: 48px 64px 0px;
-  overflow: hidden;
 
   /* 1000px media */
   @media (max-width: 62.5rem) {
@@ -37,12 +36,12 @@ body {
 
 #root {
   max-width: 1500px;
+  margin-top: 40px;
   margin: 0 auto;
 }
 
 .header {
   margin-bottom: 40px;
-  padding: 10px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -62,6 +61,7 @@ body {
   /* 900px media */
   @media (max-width: 56.25rem) {
     grid-template-columns: 1fr;
+    height: auto;
   }
 }
 

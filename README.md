@@ -6,27 +6,43 @@ The app was created as part of the **Crash Course: Build a Full-Stack Web App in
 
 ## App description
 
-Main goal of the app is to allow users to learn new facts that they didn't know before. The main part of the app is a list of facts created by users of this application
+Main goal of the app is to allow users to learn new facts that they didn't know before. The main part of the app is a list of facts created by users of this application.
 
-Facts that users input are saved in a database (Supabase) on a live server
+Facts that users input are saved in a database (Supabase) on a live server.
+
+<img width='1000' alt='today-i-learned-preview' src='./src/assets/today-i-learned-preview-1.png'>
+
+## Features
+
+- Add new fact to the list and upload it to a database
+- Filter facts by categories 
+- Vote on facts and highlight disputed facts
 
 ## Technologies Used
 
-HTML/CSS, JavaScript, React, Supabase, Netlify
+- HTML/CSS
+- JavaScript
+- React
+- Supabase
+- Netlify
 
-## Available Scripts
 
-In the project directory, you can run:
+## How to run locally
 
-### `npm start`
+- Clone the repo and switch to folder
+```js
+git clone https://github.com/mker/facts-learning-app.git
+cd facts-learning-app
+```
 
-Runs the app in the development mode.
+- Install dependencies
+```js
+npm install
+```
+
+- Start local server
+```js
+npm start
+```
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
